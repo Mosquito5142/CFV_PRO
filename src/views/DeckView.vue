@@ -257,7 +257,7 @@ const uploadDeck = () => {
     cards: deck.value.map(card => card.id)
   };
 
-  fetch('http://localhost:3000/upload', {
+  fetch('', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
