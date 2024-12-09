@@ -5,6 +5,7 @@ import ClanView from '../views/ClanView.vue'
 import SetView from '../views/SetView.vue'
 import CardDetailView from '../views/CardDetailView.vue'
 import DeckView from '../views/DeckView.vue'
+import testApi from '@/views/testApi.vue'
 
 
 const router = createRouter({
@@ -41,7 +42,13 @@ const router = createRouter({
       path : '/deck',
       name: 'deck',
       component: DeckView,
+    },
+    {
+      path : '/testApi',
+      name: 'testApi',
+      component: testApi,
     }
+    
   ],
 })
 

@@ -19,5 +19,14 @@ export default defineConfig({
   },
   define: {
     'process.env': process.env
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://script.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
   }
 });
