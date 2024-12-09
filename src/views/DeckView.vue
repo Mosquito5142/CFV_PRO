@@ -9,14 +9,14 @@
         <div class="mb-6">
           <label for="clan-select" class="block text-lg font-medium mb-2">Select Clan:</label>
           <select id="clan-select" v-model="selectedClan" class="w-full p-2 border border-gray-300 rounded-md mb-4">
-            <option value="">กรุณาเลือก</option>
+            <option value="">Select clan</option>
             <option v-for="clan in clans" :key="clan">{{ clan }}</option>
           </select>
           <div class="flex space-x-4 mb-4">
             <div class="flex-1">
               <label for="grade-select" class="block text-lg font-medium mb-2">Select Grade:</label>
               <select id="grade-select" v-model="selectedGrade" class="w-full p-2 border border-gray-300 rounded-md">
-                <option value="">กรุณาเลือก</option>
+                <option value="">Select grade</option>
                 <option v-for="grade in grades" :key="grade">{{ grade }}</option>
               </select>
             </div>
@@ -24,13 +24,13 @@
               <label for="trigger-select" class="block text-lg font-medium mb-2">Select Trigger:</label>
               <select id="trigger-select" v-model="selectedTrigger"
                 class="w-full p-2 border border-gray-300 rounded-md">
-                <option value="">กรุณาเลือก</option>
+                <option value="">Select trigger</option>
                 <option value="Heal">Heal</option>
                 <option value="Critical">Critical</option>
                 <option value="Draw">Draw</option>
                 <option value="Stand">Stand</option>
                 <option value="Front">Front</option>
-                <option value="None">ไม่มีทริกเกอร์</option>
+                <option value="None">non trigger</option>
               </select>
             </div>
           </div>
