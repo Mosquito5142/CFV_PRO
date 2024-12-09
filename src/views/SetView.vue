@@ -11,7 +11,7 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div v-for="card in filteredCards" :key="card.id" @click="goToCard(card.id)" class="border border-gray-300 rounded-lg p-4 text-center bg-white shadow-md cursor-pointer hover:bg-gray-100">
-          <img :src="card.imageurljp" :alt="card.name" class="max-w-full h-auto rounded-md"/>
+          <img :src="card.imageurlen || card.imageurljp" :alt="card.name" class="max-w-full h-auto rounded-md"/>
           <p class="mt-2 text-lg font-bold">{{ card.name }}</p>
         </div>
       </div>

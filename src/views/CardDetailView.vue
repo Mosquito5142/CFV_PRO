@@ -2,7 +2,7 @@
     <div class="container mx-auto p-4">
       <h1 class="text-3xl font-bold mb-6 text-center">{{ card.name }}</h1>
       <div class="flex flex-col items-center">
-        <img :src="card.imageurljp" :alt="card.name" class="max-w-full h-auto rounded-md mb-4"/>
+        <img :src="card.imageurlen || card.imageurljp" :alt="card.name" class="max-w-full h-auto rounded-md mb-4"/>
         <p class="text-lg"><strong>Clan:</strong> {{ card.clan }}</p>
         <p class="text-lg"><strong>Grade:</strong> {{ card.grade }}</p>
         <p class="text-lg"><strong>Power:</strong> {{ card.power }}</p>
